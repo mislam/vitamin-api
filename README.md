@@ -24,5 +24,14 @@ sail up -d
 ## Run Database Migrations
 
 ```shell
-sail php artisan migrate
+sail artisan migrate
 ```
+
+## Deployment
+
+Make sure to update `.env` file in production:
+
+- Update `APP_NAME`, `APP_URL` and `FRONTEND_DOMAIN`.
+- Change `CORS_ALLOWED_ORIGINS` to use `https` instead of `http`.
+- Use a fast and production grade `CACHE_DRIVER` and `SESSION_DRIVER`.
+- Update all `MAIL_` settings.

@@ -23,6 +23,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Route Prefix
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify which prefix Sanctum will assign to all the routes
+    | that it registers with the application. This prefix will be inserted
+    | before "/csrf-cookie" and "/token" a frontend SPA to authenticate.
+    |
+    */
+
+    'prefix' => 'auth',
+
+    /*
+    |--------------------------------------------------------------------------
     | Sanctum Guards
     |--------------------------------------------------------------------------
     |
